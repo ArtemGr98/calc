@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculation-result">
+            <output id="calculations"></output>
+        </div>
+        <div class="button">
+            <button onclick="cleaning()">C</button>
+            <button onclick="addition('( ')">(</button>
+            <button onclick="addition(' )')">)</button>
+            <button class="four" onclick="addition(' / ')">&divide</button>
+        </div>
+
+        <div class="button">
+            <button onclick="addition(1)">1</button>
+            <button onclick="addition(2)">2</button>
+            <button onclick="addition(3)">3</button>
+            <button class="four" onclick="addition(' * ')">&times</button>
+        </div>
+
+        <div class="button">
+            <button onclick="addition(4)">4</button>
+            <button onclick="addition(5)">5</button>
+            <button onclick="addition(6)">6</button>
+            <button class="four" onclick="addition(' - ')">-</button>
+        </div>
+
+        <div class="button">
+            <button onclick="addition(7)">7</button>
+            <button onclick="addition(8)">8</button>
+            <button onclick="addition(9)">9</button>
+            <button class="four" onclick="addition(' + ')">+</button>
+        </div>
+
+        <div class="button">
+            <button onclick="addition(0)">0</button>
+            <button onclick="addition('.')">.</button>
+            <button onclick="del()">Delete</button>
+            <button class="four" onclick="result()">=</button>
+        </div>
+    </div>
+</body>
+</html>
